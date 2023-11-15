@@ -1,5 +1,5 @@
-const inquire = require('inquirer');
-const connection = require('./config/connection');
+const inquirer = require('inquirer');
+const db = require('./config/connection');
 
 function start() {
     inquirer.prompt([
@@ -18,5 +18,24 @@ function start() {
             ],
         }
     ])
-    .then((response))
-}
+    .then((response) => {
+        switch (response.choices){
+            case 'View all departments':
+                viewDepartments();
+                break;
+        }
+    })
+};
+
+function viewDepartments() {
+    let sql = 'SELECT id, name FROM department';
+    db.query(sql, (err, result) => {
+        if(err){
+            console.log(err);
+        }
+        console.log(result);
+    })
+};
+
+
+start();
