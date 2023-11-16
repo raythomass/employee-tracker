@@ -1,14 +1,18 @@
 const mysql = require('mysql2');
-const { Connection } = require('mysql2/typings/mysql/lib/Connection');
 
 const db = mysql.createConnection(
     {
-      host: 'localhost',
+      host: '127.0.0.1',
       user: 'root',
       password: 'Rootpass17!',
-      database: 'employees_db'
+      database: 'employees_db',
+      
+      // socketPath: '/tmp/mysql.sock',
+      // dialectOptions: {
+      //   socketPath: '/tmp/mysql.sock',
+      // }
     },
     console.log(`Connected to the employees_db database.`)
   );
 
-  module.exports = connection;
+  module.exports = db;
