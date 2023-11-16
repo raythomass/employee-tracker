@@ -20,7 +20,7 @@ To install this project, users will need to clone the GitHub repositry onto thei
 To use the app, users will first want to open the integrated command line and run "npm install". This will install all the needed npm packages. Users will then run the command "node server.js". This will open up the command line prompts where users can select what they would like to do and follow the instructions accordingly.
 
     ```md
-    ![alt text](assets/images/screenshot.png)
+    ![Screenshot of application](images/emplyee_screenshot.png)
     ```
 
 ## Credits
