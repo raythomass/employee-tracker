@@ -25,3 +25,6 @@ To use the app, users will first want to open the integrated command line and ru
 ## Credits
 
 I was able to get valuable references from the ASU Bootcamp Student Activities as well ad the npm documentation for inquirer and mysql2.
+
+## Video Walkthrough
+https://youtu.be/V6s7-1PyXws
